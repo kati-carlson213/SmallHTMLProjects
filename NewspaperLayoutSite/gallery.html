@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery</title>
+    <link rel="stylesheet" href="css/styles.css"> 
+</head>
+<body>
+
+    <header style=" background-color: #e6e6e6; height: 90px;">
+        <div class="images" style=" display: inline-flex; text-align: center; "> <h1 style=" font-size: 36px;"><img src= "images/newspaper_icon.jpg" style="border:none; width:45px; height: 45px;" alt="Newspaper icon"> <i>Photo Gallery</i> </h1>
+        </div>
+
+
+       <nav>
+        <div class="hamburger">☰</div>
+                <ul> 
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="article.html">Article of the Day</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                </ul>
+         </nav>
+
+    </header>
+
+    <br><br>
+
+
+    <!--- these links, unlike the rest, are real. theyre just where i got the pictures from.-->
+    <main class="photo-gallery" style="text-align: center;"> 
+        <div class="photo active"><img src="images/natural_disaster_pic.png" style="width:380px;height:350px;" alt="Ruined town from natural disaster"> <br> <h3>Natural disasters that plagued the world in 2023</h3><p> Devastating natural disasters and extreme weather events killed, displaced tens of thousands of people across the world. <br>  <br> 
+            
+            <a href="https://www.aljazeera.com/gallery/2023/12/27/natural-disasters-that-plagued-the-world-in-2023"><b>Read more >></b></a></p></div>
+
+        <div class="photo active"><img src="images/superbowl_pic.png" style="width:380px;height:350px;" alt="Super bowl game"><h3>Super Bowl 2024 Recap: The Kansas City Chiefs' Big Win, Taylor Swift's Celebrations and All the Highlights</h3><p>The Kansas City Chiefs beat the San Francisco 49ers and Usher wowed with a hit-filled halftime show.  <br> <br> 
+             
+            <a href="https://people.com/super-bowl-2024-full-recap-8572245"><b>Read more >></b></a></p></div>
+
+        <div class="photo"><img src="images/protest_sign.png" style="width:380px;height:350px;" alt="Protest sign"> <br> <h3> Three ways to stop climate change and an ‘ecologically induced societal collapse’ </h3><p>Philosophy professor and environmental activist Rupert Read outlines his blueprint for securing a safer future.  <br> <br> 
+           
+            <a href="https://www.euronews.com/green/2021/02/28/three-ways-to-stop-climate-change-and-an-ecologically-induced-societal-collapse"><b>Read more >></b></a> </p></div>
+
+    </main>
+    
+    <div class="gallery-controls">
+        <button id="prev" > << Previous</button>
+        <button id="next" >Next >></button>
+  
+    </div>
+    
+
+
+    <footer> 
+        <p> Contact us at headlinehub@newspaper.com </p>
+    </footer>
+        
+
+
+    <script>
+        document.querySelector('.hamburger').addEventListener('click', function() {
+            document.querySelector('nav ul').classList.toggle('active');
+        });
+
+        document.addEventListener('DOMContentLoaded', function() {
+    const photos = document.querySelectorAll('.photo');
+    const prevButton = document.getElementById('prev');
+    const nextButton = document.getElementById('next');
+    let currentIndex = 0;
+
+    function showPhoto(index) {
+        const nextIndex = (index + 1) % photos.length;
+        photos.forEach((photo, i) => {
+            if (i === index || i === nextIndex) {
+                photo.classList.add('active');
+            } else {
+                photo.classList.remove('active');
+            }
+        });
+    }
+
+    function nextPhoto() {
+        if (currentIndex + 1 < photos.length-1) {
+            currentIndex++;
+            showPhoto(currentIndex);
+        }
+    }
+
+    function prevPhoto() {
+        if (currentIndex - 1 >= 0) {
+            currentIndex--;
+            showPhoto(currentIndex);
+        }
+    }
+
+    nextButton.addEventListener('click', nextPhoto);
+    prevButton.addEventListener('click', prevPhoto);
+
+    // Initially show the first two photos
+    showPhoto(currentIndex);
+});
+
+
+
+
+
+
+
+
+
+    </script>
+    
+
+
+</body>
+</html>
