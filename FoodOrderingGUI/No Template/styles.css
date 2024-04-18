@@ -1,0 +1,253 @@
+
+html {
+  height: 100%;
+  width: 100%;
+  background-color:   #FAEBD7;
+
+}
+
+body {
+  font-family: Verdana, sans-serif;
+}
+
+
+
+
+div.relative{
+  position: relative;
+  text-align: center;
+  
+}
+
+
+h1 {
+  letter-spacing: -8px;
+  font-size: 50px;
+  padding-right: 20px;
+}
+
+
+h2{
+  font-size: 32px;
+}
+
+
+
+img {
+  border: 1.5px solid black;
+}
+
+
+.centerContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+
+.startButton {
+  width: 300px; 
+  height: 50px; 
+  font-size: 25px;
+  font-weight: bolder;
+  
+  background-color:  #660000; 
+  background: linear-gradient(to right,   #262626 , #660000);
+
+ 
+  color: white;
+  padding: 10px 20px;
+  text-align: center; 
+
+  display: inline-block; 
+  cursor: pointer; 
+  border-radius: 5px; 
+  border: 2px solid black;
+  margin-bottom: 40px;
+
+}
+
+
+
+.startButton:hover {
+  background: none;
+  background-color: black;
+}
+
+
+
+
+.crustBox {
+  text-align: center;
+
+    color:  white;
+    background-color:  #A52A2A;
+    border: 2px solid black;
+    padding: 5px;
+    padding-bottom: 30px;
+  }
+  
+
+    
+.sizeBox {
+  text-align: center;
+
+  color:   #660000;
+  background-color:  #fcf4e8;
+    border: 2px solid black;
+    padding: 5px;
+    padding-bottom: 30px;
+  }
+
+
+
+.customRadio input[type="radio"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    background-color: #f9ecec;
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    border: 1.5px solid #2f040d;
+    outline: none;
+    cursor: pointer;
+  }
+
+  .customRadio input[type="radio"]:checked {
+    background-color:  #651a1a; 
+  }
+
+
+ 
+
+
+
+.toppingsBox {
+  text-align: center;
+
+   color:  white;
+   background-color:  #A52A2A;
+    border: 2px solid black;
+    padding: 5px;
+    padding-bottom: 30px;
+  }
+
+
+ .toppingsBox .customCheckbox input[type="checkbox"] {
+    display: inline-block; 
+    vertical-align: middle;
+  
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+  
+    background-color: #f9ecec;
+    width: 20px;
+    height: 20px;
+    border: 1.5px solid  #2f040d;
+    outline: none;
+    cursor: pointer;
+
+    position: relative; 
+  }
+
+
+
+.customCheckbox input[type="checkbox"]::before {
+  content: '\2713'; 
+  font-size: 16px; 
+  font-weight: bolder;
+
+  color: transparent; 
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.customCheckbox input[type="checkbox"]:checked::before {
+  color:  #7a1f1f;
+}
+
+
+  
+
+
+
+
+.extrasBox {
+  text-align: center;
+
+  color:   #660000;
+  background-color:  #fcf4e8;
+    border: 2px solid black;
+    padding: 5px;
+    padding-bottom: 30px;
+}
+
+.customSelect {
+  color:  black;
+  background-color: white;
+}
+
+
+
+
+.submitButton {
+  justify-content: center;
+
+  background-color:  #660000; 
+  background: linear-gradient(to right,   #2f040d , #660000);
+
+  font-weight: bolder;
+
+  border: none; 
+  color: white;
+  padding: 10px 20px;
+  text-align: center; 
+  text-decoration: none; 
+  display: inline-block; 
+  cursor: pointer; 
+  border-radius: 5px; 
+  border: 2px solid black;
+
+  margin-top: 10px;
+  margin-bottom: 40px;
+
+  font-size: 17px; 
+  height: 50px;
+  width: 280px;
+
+}
+
+.submitButton:hover {
+  background: none;
+  background-color: black;
+}
+
+
+
+#username {
+  text-align: center;
+}
+
+
+.receiptBox {
+  color: #884949;
+  background-color:  #f2f2f2;
+  border: 2px solid black;
+  padding: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  margin-top: 20px;
+  margin-bottom: 40px;
+
+
+  height: 300px;
+  width: 400px;
+
+}
