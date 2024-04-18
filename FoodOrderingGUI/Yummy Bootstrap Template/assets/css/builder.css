@@ -1,0 +1,113 @@
+.crustBox {
+    text-align: center;
+  
+      color: #330000;
+      background-color:  #e4e4e7;
+  
+      padding: 5px;
+
+      padding-top: 40px;
+      padding-bottom: 50px;
+
+      border-top: 2px solid #37373f;
+      border-bottom: 2px solid #37373f;
+
+    }
+    
+
+    .sizeBox {
+        text-align: center;
+      
+        color:   #4f1717;
+        background-color:   #eedddd;
+
+        padding: 5px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        
+        border-top: 2px solid #37373f;
+        border-bottom: 2px solid #37373f;
+         
+         
+   
+        }
+
+
+
+    .customRadio input[type="radio"] {
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+    
+        background-color: #f9ecec;
+        width: 17px;
+        height: 17px;
+        border-radius: 50%;
+        border: 1.5px solid #2f040d;
+        outline: none;
+        cursor: pointer;
+      }
+    
+      .customRadio input[type="radio"]:checked {
+        background-color:  #4d0000; 
+      }
+    
+    
+
+
+      .toppingsBox {
+        text-align: center;
+      
+         color:  #330000;
+         background-color:   #e4e4e7;
+
+         padding: 5px;
+
+         padding-top: 40px;
+         padding-bottom: 40px;
+
+         border-top: 2px solid #37373f;
+         border-bottom: 2px solid #37373f;
+         
+
+         
+        }
+
+
+      .toppingsBox .customCheckbox input[type="checkbox"] {
+        display: inline-block; 
+        vertical-align: middle;
+      
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+    
+      
+        background-color: #f9ecec;
+        width: 20px;
+        height: 20px;
+        border: 1.5px solid  #2f040d;
+        outline: none;
+        cursor: pointer;
+    
+        position: relative; 
+      }
+    
+    
+    
+    .customCheckbox input[type="checkbox"]::before {
+      content: '\2713'; 
+      font-size: 16px; 
+      font-weight: bolder;
+    
+      color: transparent; 
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    
+    
+    .customCheckbox input[type="checkbox"]:checked::before {
+      color:  #7a1f1f;
+    }
